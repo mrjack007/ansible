@@ -2,18 +2,18 @@
   connection: network_cli
   gather_facts: false
   tasks:
-  - name: set channel
+- name: set channel
     routeros_command:
       commands: /system package update set channel=current
  tasks:
   - name: update
     routeros_command:
       commands: /system package update check-for-updates
-tasks:
+ tasks:
   - name: download
     routeros_command:
       commands: /system package update download
-tasks:
+ tasks:
   - name: install
     routeros_command:
       commands: /system package update install
