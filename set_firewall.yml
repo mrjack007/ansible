@@ -3,4 +3,4 @@
   gather_facts: false
   tasks:
   - name: set channel
-    routeros_command:
+    routeros_command: /reboot
